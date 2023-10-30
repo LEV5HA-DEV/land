@@ -2,13 +2,13 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
     line-height: 1.2;
-    max-width: 1414px;
+    max-width: 1200px;
    
     background-color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 1px solid red;
+    
     color: white;
     padding: 0;
     margin: 0 auto;
@@ -21,7 +21,7 @@ h1 {
     
     background-image: url(../img/wellcome.jpg);
     background-repeat: no-repeat;
-    background-size: 1414px auto;
+    background-size: 1200px auto;
     background-size: cover;
     background-position: center;
     
@@ -35,33 +35,34 @@ h1 {
     margin: 0 auto;
 }
 .container {
-    padding: 30px;
-    max-width: 800px;
+    padding: 25px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .container .box {
     position: relative;
     margin-bottom: 30px;
-    border: 1px solid blue;
+    
 }
 
 .container .box .label {
     position: relative;
     padding: 20px;
-    background-color: rgba(2, 26, 26, 0.87);
-    color: rgb(35, 238, 8);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     cursor: pointer;
+    border: 1px solid white;
 }
 
 .container .box .label::after {
-    content: "+";
+    content: "...";
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     right: 20px;
     font-size: 25px;
-    font-weight: bold;
+   
 }
 .container .box .active .label::after {
     content: "\2014";
@@ -75,4 +76,12 @@ h1 {
 }
 .container .box .content p {
     padding: 20px;
+}
+
+.container .box .label:hover {
+    
+    background-color: rgba(11, 66, 216, 0.267);
+
+    transition: 1s;
+    
 }
