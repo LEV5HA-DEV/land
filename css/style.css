@@ -19,7 +19,7 @@ h1 {
 }
 button {
     
-    width: 12em;
+    width: 15em;
     height: 3em;
     color: white;
     background-color: black;
@@ -93,7 +93,7 @@ padding-bottom: 1em;
     top: 50%;
     transform: translateY(-50%);
     right: 20px;
-    font-size: 25px;
+    font-size: 15px;
    
 }
 .container .box .active .label::after {
@@ -121,7 +121,7 @@ padding-bottom: 1em;
 
 @media screen and (max-width: 1024px){
     section {
-        border: 1px solid green;
+        
         padding: 3%;
     }
     
