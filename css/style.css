@@ -35,7 +35,7 @@ h1 {
     margin: 0 auto;
 }
 .container {
-    padding: 25px;
+    /*padding: 0px;*/
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -85,3 +85,10 @@ h1 {
     transition: 1s;
     
 }
+
+
+@media screen and (max-width: 750px){
+    .container {
+        padding: 3%; 
+    }
+}  
