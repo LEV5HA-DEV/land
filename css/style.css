@@ -17,6 +17,38 @@ body {
 h1 {
     font-size: 3.5em;
 }
+button {
+    
+    width: 12em;
+    height: 3em;
+    color: white;
+    background-color: black;
+    border: 1px solid rgb(255, 255, 255);
+    
+}
+button:hover {
+    background-color: rgba(11, 107, 216, 0.404);
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    transition: 1s;   
+}
+button:active {
+    background-color: rgb(255, 251, 0);
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition: 1s;   
+    border: 5px;
+}
+.social_button {
+    display: flex;
+    width: 10em;
+    height: 3em;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 1em;
+}
+
+
 .wellcome_section {
     
     background-image: url(../img/wellcome.jpg);
@@ -26,12 +58,12 @@ h1 {
     background-position: center;
     
     box-sizing: border-box;
-
+padding-bottom: 1em;
 }
 
 /*=============Блок Bullets===============*/
 .bullets {
-    
+    padding-top: 1em;
     margin: 0 auto;
 }
 .container {
@@ -48,7 +80,7 @@ h1 {
 
 .container .box .label {
     position: relative;
-    padding: 20px;
+    padding: 1em;
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     cursor: pointer;
@@ -69,7 +101,7 @@ h1 {
 }
 .container .box .content {
     position: relative;
-    background-color: rgba(22, 21, 21, 0.856);
+    background-color: rgba(52, 49, 54, 0.466);
     overflow: hidden;
     max-height: 0;
     transition: 0.3s;
@@ -80,15 +112,17 @@ h1 {
 
 .container .box .label:hover {
     
-    background-color: rgba(11, 66, 216, 0.267);
+    background-color: rgba(11, 107, 216, 0.404);
 
     transition: 1s;
     
 }
 
 
-@media screen and (max-width: 750px){
-    .container {
-        padding: 3%; 
+@media screen and (max-width: 1024px){
+    section {
+        border: 1px solid green;
+        padding: 3%;
     }
+    
 }  
