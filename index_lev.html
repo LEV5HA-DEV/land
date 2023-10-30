@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L E V 5 H A</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header><nav>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    </nav></header>
+    <main>
+        <section class="wellcome_section">
+            <div>
+                <h1>Создаем сайты для бизнеса <br>и частных заказчиков.</h1> 
+
+                Эффективные, технологичные.
+
+               С оплатой по факту выполненных работ. 
+               Гарантийная поддержка и сопровождение 365 дней. 
+               <p>“Los artistas menores toman prestado; los grandes artistas roban”<br>
+                Хорошие художники копируют, великие художники воруют</p>
+                <p>Pablo Ruiz Picasso</p>
+            </div>
+            <div>
+                <p>lev5ha.dev@icloud.com</p>
+            </div>
+        </section>
+        <section class="bullets">
+            <div class="container">
+                <div class="box">
+                 <div class="label">
+                   Цена
+                 </div>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique laboriosam quis facilis iure
+                            recusandae est saepe eaque placeat nihil. Amet ut magni temporibus, porro tenetur sunt
+                             tempora voluptatibus quasi corporis?</p>
+                    </div>
+                </div>
+              
+                <div class="box">
+                    <div class="label">
+                                        Гарантии
+                     </div>
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique laboriosam quis facilis iure
+            recusandae est saepe eaque placeat nihil. Amet ut magni temporibus, porro tenetur sunt
+             tempora voluptatibus quasi corporis?</p>
+    </div>
+    </div>
+            </div>
+        </section>
+        <section class="">
+            <h2>выполненные работы</h2>
+        </section>
+<section>
+    <h2>Наши котнакты</h2>
+</section>
+<hr>
+    </main>
+    <footer>
+<div>
+    Made by Your Name — Copyright 2021
+</div>
+    </footer>
+    <script>
+        const boxes = Array.from(document.querySelectorAll(".box"));
+    
+        boxes.forEach((box) => {
+            box.addEventListener("click", boxHandler);
+        });
+    
+        function boxHandler(e) {
+            e.preventDefault();
+            let currentBox = e.target.closest(".box");
+            let currentContent = e.target.nextElementSibling;
+            currentBox.classList.toggle("active");
+            if (currentBox.classList.contains("active")) {
+                currentContent.style.maxHeight =  currentContent.scrollHeight + "px";
+                
+            } else {
+                currentContent.style.maxHeight = 0;
+            }
+        }
+    </script>
+</body>
+</html>
