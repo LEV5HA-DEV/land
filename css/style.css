@@ -75,8 +75,6 @@ padding-bottom: 1em;
 }
 
 .accordion-item {
-    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-   /* border-radius: 8px;*/
     overflow: hidden;
     margin-bottom: 15px;
     border: 1px solid rgb(255, 255, 255);
@@ -84,7 +82,7 @@ padding-bottom: 1em;
 }
 .accordion-header {
     box-sizing: border-box;
-    background-color: aquamarine;
+    background-color: rgb(246, 250, 4);
     color: rgb(255, 255, 255);
     padding: 10px;
     font-size: 20px;
@@ -96,8 +94,9 @@ padding-bottom: 1em;
     cursor: pointer;
 }
 .accordion-header:hover{
-    background-color: rgba(0, 47, 255, 0.13);
+    background-color: rgba(251, 255, 0, 0.884);
     transition: 0.3s;
+    color: black;
 }
 .active, .accordion-header {
     background-color: rgb(0, 0, 0);
@@ -124,13 +123,16 @@ padding-bottom: 1em;
 .active .accordion-header::after {
     content: "-";
     transform: rotate(180deg);
+    color: rgb(0, 0, 0);
 }
 
 
 @media screen and (max-width: 1024px){
-    section {
-        
-        padding: 3%;
+    h1 {
+        font-size: 2.5em;
     }
-    
-}  
+    section {
+     padding: 3%;
+    }
+  
+  }  
