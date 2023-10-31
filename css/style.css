@@ -62,60 +62,68 @@ padding-bottom: 1em;
 }
 
 /*=============Блок Bullets===============*/
+.container {
+   
+}
 .bullets {
     padding-top: 1em;
     margin: 0 auto;
 }
-.container {
-    /*padding: 0px;*/
-    max-width: 1200px;
+.accordion {
+    width: 100%;
     margin: 0 auto;
 }
 
-.container .box {
-    position: relative;
-    margin-bottom: 30px;
+.accordion-item {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+   /* border-radius: 8px;*/
+    overflow: hidden;
+    margin-bottom: 15px;
+    border: 1px solid rgb(255, 255, 255);
     
 }
-
-.container .box .label {
-    position: relative;
-    padding: 1em;
-    background-color: rgb(0, 0, 0);
+.accordion-header {
+    box-sizing: border-box;
+    background-color: aquamarine;
     color: rgb(255, 255, 255);
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.5s ease;
     cursor: pointer;
-    border: 1px solid white;
 }
-
-.container .box .label::after {
-    content: "...";
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 20px;
-    font-size: 15px;
-   
-}
-.container .box .active .label::after {
-    content: "\2014";
-}
-.container .box .content {
-    position: relative;
-    background-color: rgba(52, 49, 54, 0.466);
-    overflow: hidden;
-    max-height: 0;
+.accordion-header:hover{
+    background-color: rgba(0, 47, 255, 0.13);
     transition: 0.3s;
 }
-.container .box .content p {
-    padding: 20px;
+.active, .accordion-header {
+    background-color: rgb(0, 0, 0);
 }
-
-.container .box .label:hover {
-    
-    background-color: rgba(11, 107, 216, 0.404);
-
-    transition: 1s;
-    
+.accordion-content {
+    background-color: rgb(255, 255, 255);
+    padding: 0 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4 ease-out;
+}
+.content-text {
+    color: black;
+    line-height: 1.6;
+}
+.accordion-header::after{
+    content: "+";
+   
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 22px;
+    transition: transform 0.3s ease;
+}
+.active .accordion-header::after {
+    content: "-";
+    transform: rotate(180deg);
 }
 
 
