@@ -29,22 +29,25 @@ align-items: center;
 h1 {
     font-size: 3.5em;
 }
-button {
-    
-    width: 20em;
+.button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 15em;
     height: 3em;
     color: white;
     background-color: black;
     border: 1px solid rgb(255, 255, 255);
+    border-radius: 45px;
     
 }
-button:hover {
+.button:hover {
     background-color: rgba(11, 107, 216, 0.404);
     border: 1px solid rgb(255, 255, 255);
     color: rgb(255, 255, 255);
     transition: 1s;   
 }
-button:active {
+.button:active {
     background-color: rgb(255, 251, 0);
     border: 1px solid rgb(255, 255, 255);
     color: rgb(0, 0, 0);

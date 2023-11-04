@@ -30,13 +30,22 @@ p {
     font-size: 1em;
     padding: 10px;
 }
-img {
+.foto {
     width: 100%;
     height: 400px;
     object-fit: cover;
     border: 2px solid rgba(248, 146, 121, 0.589);
     align-items: center;
     box-sizing: border-box;
+}
+.ico {
+width: 24px;
+height: auto;
+color: blueviolet;
+}
+.message_box {
+    display: flex;
+    justify-content: space-evenly;
 }
 .warning {
     border: 1px solid black;
