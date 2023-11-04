@@ -16,8 +16,12 @@ body {
 li {
     list-style-type: none;
 }
+a {
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
+}
 .nav_box {
-
 display: flex;
 justify-content: space-around;
 align-items: center;
@@ -68,7 +72,9 @@ button:active {
     box-sizing: border-box;
 padding-bottom: 1em;
 }
-
+.rec {  
+    color: red;
+}
 /*=============Блок Bullets===============*/
 .container {
    
