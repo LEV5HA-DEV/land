@@ -1,12 +1,19 @@
 body    {
-    font-family: system-ui, -apple-system, 'Helvetica Neue', sans-serif;
+   
+   font-family: 'Jost', sans-serif;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    background-image: url(./img/texture.jpg);
+   
     background-position: left;
     background-repeat: repeat; 
 }
+main {
+    max-width: 700px;
+    background-color: pink;
+    margin: 0 auto;
+}
+
 a {
     list-style-type: none;
     color: rgb(0, 0, 0);
@@ -18,17 +25,22 @@ section {
     background-color: rgba(255, 255, 255, 0.925);
     margin: 0 auto;
 }
-footer {
-    max-width: 650px;
-    margin: 0 auto; 
-}
+
 h1 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-shadow: 1px 1px 2px pink;
+}
+h3 {
+    
 }
 p {
     font-size: 1em;
     padding: 10px;
+}
+.no_call {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .foto {
     width: 100%;
@@ -41,11 +53,28 @@ p {
 .ico {
 width: 24px;
 height: auto;
-color: blueviolet;
+padding: 5px;
+
 }
 .message_box {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.hello_mess {
+    padding: 0;
+}
+.viber {
+    color: #7360f2;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.WhatsApp {
+    color: #128c7e;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 }
 .warning {
     border: 1px solid black;
@@ -70,4 +99,21 @@ box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 .border_gold {
     margin-top: 20px;
     border: 2px solid rgba(248, 146, 121, 0.589);
+}
+footer {
+    background-color: pink;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.footer_p {
+    margin: 0px;
+    padding: 15px;
+}
+.social_link {
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+padding-bottom: 40px;
 }
