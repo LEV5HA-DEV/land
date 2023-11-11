@@ -80,11 +80,28 @@ padding-bottom: 1em;
 }
 /*=============Блок Bullets===============*/
 .container {
-   
+display: flex;
+ 
+justify-content: center;
+align-items: center; 
 }
+.img_prew {
+
+text-align: center;
+}
+.demo {
+    max-width: 300px;
+    height: auto;
+    padding: 10px;
+
+}
+
 .bullets {
+    display: flex;
     padding-top: 1em;
     margin: 0 auto;
+    
+    
 }
 .accordion {
     width: 100%;
@@ -160,4 +177,9 @@ font-size: 1em;
      padding: 3%;
     }
   
+.bullets {
+   flex-direction: column;
+    
+}
+
   }  
