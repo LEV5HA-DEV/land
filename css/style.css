@@ -159,6 +159,37 @@ text-align: center;
     transform: rotate(180deg);
     color: rgb(0, 0, 0);
 }
+
+.will_work {
+   
+}
+.unit_box {
+    
+    display: flex;
+
+}
+.unit_work {
+    box-sizing: border-box;
+     border: 1px solid white;
+     flex-grow: 1;
+     width: 220px;
+     height: 250px;
+     margin: 5px;
+   text-align: center;
+
+}
+.unit_work:hover {
+background-color: pink;
+}
+.unit_work:active {
+background-color: yellow;
+}
+.unit_h {
+    
+    padding: 5px;
+    text-transform: uppercase;
+}
+
 /*---------------FOOTER---------------------------*/
 footer {
 height: 90px;
@@ -181,5 +212,23 @@ font-size: 1em;
    flex-direction: column;
     
 }
+.unit_work {
+    
+     width: 120px;
+    
+}
 
   }  
+  @media screen and (max-width: 768px){
+   .unit_box {
+    flex-wrap: wrap;
+
+}
+.unit_work {
+    
+     width: 120px;
+    
+}
+
+  }  
+
