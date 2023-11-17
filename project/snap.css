@@ -18,10 +18,7 @@ p {
  font-size: 1.5em;
  }
 
-.scroll_box {
-    display: flex;
-    flex-direction: column;   
-}
+
 section, footer {
     height: 100vh;
     padding: 0;
@@ -38,15 +35,15 @@ section, footer {
     background-color: rgb(0, 0, 0);
 }
 .header {
-position: fixed;
-top: 0;
-width: 100%;
-box-sizing: border-box;
-z-index: 2;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 2;
 }
 .link a{
-color: white;
-text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
 .bullet1 {
     /*padding: 50px 0;*/
@@ -62,26 +59,16 @@ text-decoration: none;
     background: rgb(64, 62, 62, 0.91);
     backdrop-filter: grayscale(1) contrast(3) blur(1px);
     box-shadow: 5px 2px 2px black;
-    
     color: white; 
     font-size: 1em;
 }
-.boxx {
-    
-    display: flex;
-}
-.box_one {
-    
-}
-.box_two {
-   padding-left: 100px; 
-}
+
 .slide1 {
-padding: 6em 3em;
-background-image: url(img/slide1.jpg);
-background-size: cover;
-background-position: center;
-}
+    padding: 6em 3em;
+    background-image: url(img/slide1.jpg);
+    background-size: cover;
+    background-position: center;
+    }
 
 
 .slide2 {
@@ -89,50 +76,51 @@ background-position: center;
     background-image: url(img/slide2.jpg);
     background-size: cover;
     background-position: center;
-    
-    
     }
-    .slide3 {
-        padding: 6em 3em;
+.slide3 {
+    padding: 6em 3em;
     background-image: url(img/slide3.jpg);
     background-size: cover;
     background-position: center;
-        }
-    .slide4 {
-        padding: 5em 3em;   
+    }
+.slide4 {
+    padding: 5em 3em;   
     background-image: url(img/slide4.jpg);
     background-size: cover;
     background-position: center;
-            }
-    .slide5 {
+    }
+.slide5 {
     background-image: url(img/slide5.jpg);
     background-size: cover;
     background-position: center;
-                }
+    }
 .slide6 {
-color: white;
-}
+    color: white;
+    }
+.footer_wrapper {
+    border: 1px solid red;
+    position: relative;
+    top: 5em;
+    }
 @media (max-width: 900px) {
-h1, h2{ 
-font-size: 2.5em;
-}
-p {     
-font-size: 1em;
- }
+    h1, h2{ 
+    font-size: 2.5em;
+    }
+    p {     
+    font-size: 1em;
+     }
 .bullet1 {
-padding: 1em; /* Сверху | Справа | Снизу | Слева */
+    padding: 1em; /* Сверху | Справа | Снизу | Слева */
 } 
-.boxx {
-flex-direction: column;
+.scan_cod {
+width: 50%;
+height: auto;
 }
 }
 
 @media (max-width: 420px) {
 h1, h2{ 
-font-size: 1.5em;
+     font-size: 1.5em;
 }
-.box_two {
-    padding-left: 0px; 
- }
 
 }
