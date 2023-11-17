@@ -1,32 +1,31 @@
 html {
-    
     font-family: 'Jost', sans-serif;
     padding: 0;
     margin: 0;
     scroll-snap-type: y mandatory;
-    scroll-padding: 50px 0 0 0;
+    scroll-padding: 0 0 0 0;
     -webkit-overflow-scrolling: touch;
-    background-color: brown;
+    background-color: black;
     box-sizing: border-box;
 
-}
-.scroll_box {
-    display: flex;
-    flex-direction: column;
-    
-}
-section {
-   /* padding-top: 90px;*/
-    height: 100vh;
-    padding: 0;
-    scroll-snap-align: start;
-    scroll-snap-stop: normal; 
-    
-    
 
 }
-.body {
-   
+h1, h2 {
+    font-size: 3.5em;
+}
+p {     
+ font-size: 1.5em;
+ }
+
+.scroll_box {
+    display: flex;
+    flex-direction: column;   
+}
+section {
+    height: 100vh;
+    padding: 0;
+    scroll-snap-align: end start;
+    scroll-snap-stop: always; 
 }
 .nav_box{
     height: 40px;
@@ -36,43 +35,37 @@ section {
     justify-content: space-around;
     align-items: center;
     background-color: rgb(0, 0, 0);
-   
-
-
-
 }
 .header {
-    
 position: fixed;
 top: 0;
-
 width: 100%;
-
 box-sizing: border-box;
-
+z-index: 2;
 }
 .link a{
 color: white;
 text-decoration: none;
 }
-
-.slide1 {
-padding-top: 6em;
-background-image: url(img/slide1.jpg);
-background-size: cover;
-background-position: center;
-color: white;
-
-}
-.slide1 .bullet1 {
+.bullet1 {
     /*padding: 50px 0;*/
-    padding: 1em; /* Сверху | Справа | Снизу | Слева */
-    background: rgba(0,0,0,.6);
+    padding: 3em; /* Сверху | Справа | Снизу | Слева */
+    background: rgb(64, 62, 62, 0.91);
     backdrop-filter: grayscale(1) contrast(3) blur(1px);
     border: 1px solid white;
     width: fit-content;
+    color: white;
 } 
+.slide1 {
+padding: 6em 3em;
+background-image: url(img/slide1.jpg);
+background-size: cover;
+background-position: center;
+}
+
+
 .slide2 {
+    padding: 6em 3em;
     background-image: url(img/slide2.jpg);
     background-size: cover;
     background-position: center;
@@ -80,17 +73,37 @@ color: white;
     
     }
     .slide3 {
-        background-image: url(img/slide3.jpg);
-        background-size: cover;
-        background-position: center;
+    background-image: url(img/slide3.jpg);
+    background-size: cover;
+    background-position: center;
         }
-        .slide4 {
-            background-image: url(img/slide4.jpg);
-            background-size: cover;
-            background-position: center;
+    .slide4 {
+    background-image: url(img/slide4.jpg);
+    background-size: cover;
+    background-position: center;
             }
-            .slide5 {
-                background-image: url(img/slide5.jpg);
-                background-size: cover;
-                background-position: center;
+    .slide5 {
+    background-image: url(img/slide5.jpg);
+    background-size: cover;
+    background-position: center;
                 }
+
+@media (max-width: 900px) {
+h1, h2{ 
+font-size: 2.5em;
+}
+p {     
+font-size: 1em;
+ }
+.bullet1 {
+padding: 1em; /* Сверху | Справа | Снизу | Слева */
+} 
+}
+
+@media (max-width: 420px) {
+h1, h2{ 
+font-size: 1.5em;
+}
+
+
+}
