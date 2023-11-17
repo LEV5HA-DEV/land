@@ -22,7 +22,7 @@ p {
     display: flex;
     flex-direction: column;   
 }
-section {
+section, footer {
     height: 100vh;
     padding: 0;
     scroll-snap-align: start;
@@ -109,7 +109,9 @@ background-position: center;
     background-size: cover;
     background-position: center;
                 }
-
+.slide6 {
+color: white;
+}
 @media (max-width: 900px) {
 h1, h2{ 
 font-size: 2.5em;
@@ -129,6 +131,8 @@ flex-direction: column;
 h1, h2{ 
 font-size: 1.5em;
 }
-
+.box_two {
+    padding-left: 0px; 
+ }
 
 }
