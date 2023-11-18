@@ -98,16 +98,66 @@ section, footer {
     color: white;
     }
 .footer_wrapper {
-    border: 1px solid red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     position: relative;
-    top: 5em;
+    top: 50%;
     }
+.footer_inf {
+
+}
+.created {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.lamp {
+    color: #fff;
+  text-shadow:
+    0 0 1px #fff,
+    0 0 2px #fff,
+    0 0 5px #fff,
+    0 0 11px #0fa,
+    0 0 20px #0fa,
+    0 0 30px #0fa,
+    0 0 55px #0fa,
+    0 0 80px #0fa;
+ }
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+lamp:
+  color: #fff;
+  text-shadow:
+    0 0 1px #fff,
+    0 0 2px #fff,
+    0 0 5px #fff,
+    0 0 11px #0fa,
+    0 0 20px #0fa,
+    0 0 30px #0fa,
+    0 0 55px #0fa,
+    0 0 80px #0fa;
+ }
+  20%, 24%, 55% {       
+    text-shadow: none;
+  }
+}
+.lamp {
+  animation: flicker 1.5s infinite alternate;     
+}
+.picasso {
+font-size: 1.5em;
+font-family: ;
+}
+
 @media (max-width: 900px) {
     h1, h2{ 
     font-size: 2.5em;
     }
     p {     
     font-size: 1em;
+    line-height: 1.5em;
      }
 .bullet1 {
     padding: 1em; /* Сверху | Справа | Снизу | Слева */
@@ -116,11 +166,14 @@ section, footer {
 width: 50%;
 height: auto;
 }
+.footer_wrapper {
+   flex-direction: column;
+    top: 25%;
+    }
 }
 
 @media (max-width: 420px) {
 h1, h2{ 
      font-size: 1.5em;
 }
-
 }
