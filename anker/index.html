@@ -6,11 +6,47 @@
     <title>LEVSHA студия Web разработки, iT продуктов.</title>
     <link rel="stylesheet" href="anker.css">
 </head>
-<body class="body">
-    <header></header>
-    <main>
-        <h1>Hello!</h1>
-    </main>
+<body>
+    
+        <div class="banner">
+            <img class="layer-1" src="img/background.png">
+            <img class="layer-2" src="img/meteor.png">
+
+               <div class="layer-3">
+                   <h1>Hello &amp; Wellcome!!!</h1>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, tenetur.</p>
+                   <a href="#teks">Get Started</a>
+               </div>
+
+            <img class="layer-4" src="img/4.png">
+            <img class="layer-5" src="img/5.png">
+            <img src="img/6.png" alt="">
+        </div>
+        <div class="content" id="teks">
+           <h1>Paralax effect</h1> 
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos corporis excepturi, reprehenderit quo ad fugiat aliquid itaque necessitatibus, nemo aliquam, a maxime, ex? Nostrum architecto voluptate error repellendus ipsa non dolorum nam reprehenderit laboriosam ex fugiat, mollitia nulla sapiente ratione perferendis, sequi nesciunt velit cum neque aliquid aut illum? Consequatur, cumque id, natus illo delectus iusto quaerat. Nisi quidem corporis expedita dignissimos a? Tempora doloremque quidem, enim autem impedit ut minus, ea obcaecati cupiditate sapiente adipisci iusto excepturi, rem cum labore voluptas asperiores repellendus veniam nisi architecto maiores esse, perspiciatis. Ratione quis quos, dolores, non enim ipsum sint, molestiae officia possimus culpa doloremque iusto distinctio ab ea atque qui esse iure deserunt eum perspiciatis.</p>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Eius soluta mollitia libero laudantium voluptas, nemo debitis beatae dolores reiciendis veniam iste minus praesentium ad fugiat corrupti expedita sit molestias dolor perspiciatis facere quibusdam? Dignissimos aliquid quibusdam, dicta, aliquam id hic exercitationem. Consequatur, inventore possimus velit itaque neque alias voluptatem nostrum!</p>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum esse est, accusantium debitis accusamus, consequuntur impedit magni error aspernatur, cupiditate quos beatae facilis necessitatibus quia odio voluptatum. Perferendis quisquam, iure?</p>
+        </div>
+    
     <footer></footer>
+    <script type="text/javascript">
+
+        let layer_1 = document.querySelector('.layer-1');
+        let layer_2 = document.querySelector('.layer-5');
+        let layer_3 = document.querySelector('.layer-3');
+        let layer_4 = document.querySelector('.layer-4');
+        let layer_5 = document.querySelector('.layer-5');
+        
+        window.onscroll = function(){
+            let Y = window.scrollY;
+            
+            layer_1.style.transform = 'translateY('+ Y/1.5 +'px)';
+            layer_2.style.transform = 'translateY('+ Y/2 +'px)';
+            layer_3.style.transform = 'translateY('+ Y/1.5 +'px)';
+            layer_4.style.transform = 'translateY('+ Y/2 +'px)';
+            layer_5.style.transform = 'translateY('+ Y/3 +'px)';
+        }
+    </script>
 </body>
 </html>
