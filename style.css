@@ -1,0 +1,118 @@
+* {
+	font-family: 'Inter', sans-serif;
+}
+body {
+	box-sizing: border-box;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1440px;
+	background-color: #FAFAFA;
+/*	border: 1px solid blue;*/
+}
+h1, .big_p{
+/*	border: 1px solid green;*/
+	text-transform: uppercase;
+	font-size: 6em;
+	margin: 0 0 0 auto;
+	height: fit-content;
+}
+
+h2{
+	text-transform: uppercase;
+	font-size: 2em;
+	letter-spacing: 0.25em;
+}
+p {
+	font-size: 3em;
+}
+img {
+	width: 100%;
+	height: auto;
+}
+/**.about_wrapper{
+	border: 1px solid red;
+	max-width: 800px;
+	height: fit-content;
+	margin: 0 0 0 auto ;/* сверху | справа | снизу | слева */
+
+
+.bullet {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 9em auto 9em auto;
+	flex-wrap: wrap;
+}
+.bullet_p {
+ font-size: 1.5em;
+}
+.first_section {
+/*	border: 1px solid red;*/
+	display: flex;
+
+}
+.freelancer {
+	font-size: 1em;
+  position: relative;
+  top: 257px;
+  right: 153px;
+  height: fit-content;
+}
+.two_section {
+	/*border: 1px solid red;*/
+}
+.about_padding {
+	/*border: 1px solid red;*/
+	margin: 1em;
+
+	font-size: 0.5em;
+}
+
+/*----Тут надо причесать!!11111-----*/
+.next_bullet {
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.next_p {
+	text-transform: uppercase;
+	font-size: 6em;
+	margin: 0;
+	
+}
+
+ @media (max-width: 416px) {
+    /*
+    Стили для устройств, у которых ширина viewport меньше или равно 770 пикселей.
+    Это множество мобильных устройств
+    */
+h1, .big_p{
+font-size: 3em;
+}
+h2{
+font-size: 1em;
+letter-spacing: 0.125em;
+}
+p {
+	font-size: 1.5em;
+}
+.about_wrapper{
+	/*border: 1px solid red;*/
+	width: 100%;
+	margin: 0;/* сверху | справа | снизу | слева */
+}
+.freelancer {
+	font-size: 1em;
+  position: relative;
+  top: 60px;
+  right: 80px;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+  }
+
