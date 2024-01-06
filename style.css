@@ -7,7 +7,7 @@ body {
 	width: 100%;
 	max-width: 1440px;
 	background-color: #FAFAFA;
-/*	border: 1px solid blue;*/
+/*border: 1px solid blue;*/
 }
 h1 {
 
@@ -77,7 +77,7 @@ img {
 padding: 9em 0;
 display: flex;
 align-items: center;
-justify-content: space-evenly;
+justify-content: space-between;
 flex-wrap: wrap;
 }
 
@@ -115,6 +115,72 @@ flex-wrap: wrap;
 	font-size: 6em;
 	margin: 0;
 }
+
+
+
+/*---ACCORDEON----*/
+.accordion {
+width: 50%;
+margin: 6em auto;
+margin-right: 0;
+/*border: 1px solid red;  
+margin-top: 6em;*/
+}
+
+.accordion-item {
+    overflow: hidden;
+    margin-bottom: 15px;
+  /* border: 1px solid rgb(255, 255, 255);*/
+    
+}
+.accordion-header {
+    box-sizing: border-box;
+   /* background-color: rgb(246, 250, 4);*/
+   /* color: rgb(255, 255, 255);*/
+   border-bottom: 1px solid black;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+}
+.accordion-header:hover{
+  /*  background-color: rgba(251, 255, 0, 0.884);*/
+    transition: 0.3s;
+   /* color: black;*/
+}
+.active, .accordion-header {
+  /*  background-color: rgb(0, 0, 0);*/
+}
+.accordion-content {
+   /* background-color: rgb(255, 255, 255);*/
+    padding: 0 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4 ease-out;
+}
+.content-text {
+   /* color: black;*/
+    line-height: 1.6;
+}
+.accordion-header::after{
+    content: "+";
+   
+  /*  color: rgb(255, 255, 255);*/
+    font-weight: bold;
+    font-size: 22px;
+    transition: transform 0.3s ease;
+}
+.active .accordion-header::after {
+    content: "-";
+    transform: rotate(180deg);
+  /*  color: rgb(0, 0, 0);*/
+/*---ACCORDEON----*/
+
+
 
  @media (max-width: 416px) {
     /*
