@@ -40,6 +40,35 @@ img {
 	max-width: 800px;
 	height: fit-content;
 	margin: 0 0 0 auto ;/* сверху | справа | снизу | слева */
+.header {
+  box-shadow: 0px 4px 21px -1px rgba(34, 60, 80, 0.13);
+}
+.container {
+  
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.menu__list {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.menu__item:not(:last-child) {
+  margin-right: 20px;
+}
+.menu__link {
+  font-size: 16px;
+}
 
 
 .bullet {
@@ -53,7 +82,7 @@ img {
  font-size: 1.5em;
 }
 .first_section {
-	/*border: 1px solid red;*/
+	
 	display: flex;
 }
 
@@ -61,8 +90,8 @@ img {
 .freelancer {
 	font-size: 1em;
   position: relative;
-  top: 355px;
-  right: 350px;
+  top: 369px;
+  right: 153px;
   height: fit-content;
 }
 .two_section {
@@ -139,7 +168,7 @@ margin-top: 6em;*/
    /* color: rgb(255, 255, 255);*/
    border-bottom: 1px solid black;
     padding: 10px;
-    font-size: 1.5em;
+    font-size: 20px;
     font-weight: bold;
     display: flex;
     justify-content: space-between;
@@ -165,57 +194,54 @@ margin-top: 6em;*/
 .content-text {
    /* color: black;*/
     line-height: 1.6;
-    font-size: 1.5em;
 }
 .accordion-header::after{
     content: "+";
    
   /*  color: rgb(255, 255, 255);*/
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 22px;
     transition: transform 0.3s ease;
 }
 .active .accordion-header::after {
     content: "-";
     transform: rotate(180deg);
-  /*  color: rgb(0, 0, 0);*/
 }
+  /*  color: rgb(0, 0, 0);*/
 /*---ACCORDEON----*/
 
 
 
- @media (max-width: 416px) {
-    /*
-    Стили для устройств, у которых ширина viewport меньше или равно 770 пикселей.
-    Это множество мобильных устройств
-    */
-h1, .big_p{
-font-size: 3em;
-
+@media (max-width: 770px) {
+  /*
+  Стили для устройств, у которых ширина viewport меньше или равно 770 пикселей.
+  Это множество мобильных устройств
+  */
+  h1, .big_p{
+    font-size: 3em;
+    }
+    
+    h2{
+    font-size: 1em;
+    letter-spacing: 0.125em;
+    }
+    
+    p {
+    font-size: 1.5em;
+    }
+    
+    .about_wrapper{
+      /*border: 1px solid red;*/
+      width: 100%;
+      margin: 0;/* сверху | справа | снизу | слева */
+    }
+    
+    .freelancer {
+    font-size: 1em;
+    position: relative;
+    top: 60px;
+    right: 80px;
+    background-color: yellow;
+    border: 3px solid blue;
+     }
 }
-h2{
-font-size: 1em;
-letter-spacing: 0.125em;
-}
-p {
-	font-size: 1.5em;
-}
-.about_wrapper{
-	/*border: 1px solid red;*/
-	width: 100%;
-	margin: 0;/* сверху | справа | снизу | слева */
-	
-}
-.freelancer {
-	font-size: 1em;
-  position: relative;
-  top: 166px;
-  right: 89px;
-  }
-
-  .accordion {
-width: 100%;
-margin: 6em auto;
-margin-right: 0;
-  }
-
